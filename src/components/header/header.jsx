@@ -42,17 +42,40 @@ const SocialMedia = [
 					</div>
 				</div>
 			</div>
-   <div className="container">
+   <div className="container nav_design">
       <div className="row">
            <div className="col-md-6 col-sm-6">
-             <a class="navbar-brand" href="#">
+             <a href="#" className="navbar-brand">
             <img className="logo_design" src ={logo} alt="Vrikshit Foundation"/>
             </a>
             </div>
             <div className="col-md-6 col-sm-6">
-                 <ul className="header">
-                     {NavBar.map(p => <li key={p.id}><Route path={p.path} component={p.component} >{p.navBar}</Route></li>)}
-                </ul>
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li class="active">
+							  	<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="#" class="fh5co-sub-ddown">Get Involved</a>
+								<ul class="fh5co-sub-menu">
+									<li><a href="#">Donate</a></li>
+									<li><a href="#">Fundraise</a></li>
+									<li><a href="#">Campaign</a></li>
+									<li><a href="#">Philantrophy</a></li>
+									<li><a href="#">Volunteer</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="fh5co-sub-ddown">Projects</a>
+								 <ul class="fh5co-sub-menu">
+								 	<li><a href="#">Water World</a></li>
+								 	<li><a href="#">Cloth Giving</a></li>
+								 	<li><a href="#">Medical Mission</a></li>
+								</ul>
+							</li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
             </div>
      </div>
   </div>

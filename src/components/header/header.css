@@ -18,13 +18,26 @@
 .social_icon_position
 {
   padding:10px;
+  color: lightgreen;
+}
+.social_icon_position:hover{
+  color: lightseagreen;
 }
 
 .nav_above_text_position
 {
   padding: 10px;
+  color: lightgreen;
 }
 .logo_design
 {
-height: 50px;
+height: 60px;
+border-radius: 50%;
+}
+.nav_design
+{
+
+  padding:30px;
+  background-color: white;
+  width: 100%;
 }
