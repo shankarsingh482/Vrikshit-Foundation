@@ -1,6 +1,30 @@
 
 
-.header li
+.header
 {
   list-style: none;
+}
+
+.nav_above_design
+{
+  background: black;
+  color: green;
+  padding: 10px;
+  width: 100%;
+}
+.nav_above_design:hover{
+  color:pink;
+}
+.social_icon_position
+{
+  padding:10px;
+}
+
+.nav_above_text_position
+{
+  padding: 10px;
+}
+.logo_design
+{
+height: 50px;
 }
