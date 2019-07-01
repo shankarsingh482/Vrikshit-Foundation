@@ -1,5 +1,6 @@
 
 
+
 .header
 {
   list-style: none;
@@ -33,6 +34,7 @@
 {
 height: 60px;
 border-radius: 50%;
+margin-top: -15px;
 }
 .nav_design
 {
@@ -40,4 +42,12 @@ border-radius: 50%;
   padding:30px;
   background-color: white;
   width: 100%;
+}
+.menu_style
+{
+  background-color: white;
+}
+.menu_style:hover{
+  color:green;
+
 }
