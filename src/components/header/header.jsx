@@ -1,38 +1,35 @@
 import React from 'react';
 import {
-  NavLink,
   BrowserRouter ,
 } from 'react-router-dom';
-import styles from './header.css';
-import classnames from 'classnames'
-
+import './header.css'
+import logo from '../../assests/logo/homePageicon.jpg'
+import NavBar from './navBar';
+import {NavBarData,TopHeaderLink,SocialMedia } from './headerData';
 class Header extends React.PureComponent{
 
 render() {
-
   return(
-    <BrowserRouter >
-<header>
-    <div clas="conatiner">
-      <div class="nav-header">
-      <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="index.html">Vrikshit Foundation</a></h1>
-      </div>
+    <BrowserRouter>
+      <NavBar SocialMedia={SocialMedia} TopHeaderLink ={TopHeaderLink} />
+			<div className="container nav_design">
+         <div className="row">
+            <div className="col-md-6 col-sm-6">
+              <a href="#" className="navbar-brand">
+                 <img className="logo_design" src ={logo} alt="Vrikshit Foundation"/>
+             </a>
+         </div>
+    <div className="col-md-6 col-sm-6">
+      <ul class="sf-menu menu_style" id="fh5co-primary-menu">
+			{NavBarData.map(p => <li className="active"><a className="menu_style" href="index.html">{p.navBar}</a></li>)}
+      </ul>
     </div>
-    <ul className={classnames(styles.header)}>
-            <li><NavLink to="/">Vrikshit Foundation</NavLink></li>
-            <li><NavLink to="/aboutus">About Us</NavLink></li>
-            <li><NavLink to="/contact">Contact Us</NavLink></li>
-            <li><NavLink to="/gallery">Gallery</NavLink></li>
-          </ul>
-</header>
+  </div>
+</div>
+
 </BrowserRouter >
   )
 }
-
-
-
-
 }
 
 
