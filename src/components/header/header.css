@@ -10,7 +10,7 @@
 {
   background: black;
   color: green;
-  padding: 10px;
+  padding: 15px;
   width: 100%;
 }
 .nav_above_design:hover{
@@ -34,12 +34,12 @@
 {
 height: 60px;
 border-radius: 50%;
-margin-top: -15px;
+margin-top: -20px;
 }
 .nav_design
 {
 
-  padding:30px;
+  padding:15px;
   background-color: white;
   width: 100%;
 }
