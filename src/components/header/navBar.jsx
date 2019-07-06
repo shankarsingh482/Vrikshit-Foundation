@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
 class NavBar extends React.Component{
   render(){
     const {TopHeaderLink,SocialMedia} = this.props;

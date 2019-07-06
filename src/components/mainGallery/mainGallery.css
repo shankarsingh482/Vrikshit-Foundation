@@ -1,0 +1,176 @@
+.backgroundImgUrl1{
+  background-image: url(../../assests/gallery/cover_bg_1.jpg)
+}
+
+
+.backgroundImgUrl2{
+  background-image: url(../../assests/gallery/cover_bg_3.jpg)
+}
+
+.backgroundImgUrl3{
+  background-image: url(../../assests/gallery/cover_bg_1.jpg)
+}
+
+.backgroundImgUrl4{
+  background-image: url(../../assests/gallery/cover_bg_3.jpg)
+}
+
+#fh5co-portfolio {
+  padding: 6em 0;
+  min-height: 500px;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-portfolio {
+    padding: 3em 0;
+  }
+}
+.h3_gallery_heading{
+    font-size: 40px;
+    font-weight: 300;
+    position: relative;
+}
+#fh5co-portfolio p{
+  margin-top: 40px;
+  font-size: 20px;
+  color: #848484;
+  font-family: "Open Sans", Arial, sans-serif;
+  margin-bottom: 40px;
+}
+#fh5co-portfolio-list {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#fh5co-portfolio-list li {
+  display: block;
+  padding: 0;
+  margin: 0 0 10px 1%;
+  list-style: none;
+  min-height: 400px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  clear: left;
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  #fh5co-portfolio-list li {
+    margin-left: 0;
+  }
+}
+#fh5co-portfolio-list li a {
+  min-height: 400px;
+  padding: 2em;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+#fh5co-portfolio-list li a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: 80;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background: transparent;
+}
+#fh5co-portfolio-list li a:hover:before {
+  background: rgba(0, 0, 0, 0.5);
+}
+#fh5co-portfolio-list li a .case-studies-summary {
+  width: auto;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
+  position: absolute;
+  z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-portfolio-list li a .case-studies-summary {
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+  }
+}
+#fh5co-portfolio-list li a .case-studies-summary span {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+#fh5co-portfolio-list li a .case-studies-summary h2 {
+  color: #fff;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-portfolio-list li a .case-studies-summary h2 {
+    font-size: 20px;
+  }
+}
+#fh5co-portfolio-list li.two-third {
+  width: 65.6%;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-portfolio-list li.two-third {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #fh5co-portfolio-list li.two-third {
+    width: 100%;
+  }
+}
+#fh5co-portfolio-list li.one-third {
+  width: 32.3%;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-portfolio-list li.one-third {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #fh5co-portfolio-list li.one-third {
+    width: 100%;
+  }
+}
+#fh5co-portfolio-list li.one-half {
+  width: 49%;
+}
+@media screen and (max-width: 480px) {
+  #fh5co-portfolio-list li.one-half {
+    width: 100%;
+  }
+}
+
+.heading-section-after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 50%;
+  width: 100px;
+  margin-left: -50px;
+  height: 2px;
+  background: #ff5722;
+}
+.hr_style
+ {
+    width:100px;
+    background-color: #ff5722;
+    height: 2px;
+    margin-bottom: 45px;
+}

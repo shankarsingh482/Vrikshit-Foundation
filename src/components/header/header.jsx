@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   BrowserRouter ,
+  Link
 } from 'react-router-dom';
 import './header.css'
 import logo from '../../assests/logo/homePageicon.jpg'
@@ -9,8 +10,9 @@ import {NavBarData,TopHeaderLink,SocialMedia } from './headerData';
 class Header extends React.PureComponent{
 
 render() {
-  return(
+return(
     <BrowserRouter>
+    <div className="navbar-fixed-top">
       <NavBar SocialMedia={SocialMedia} TopHeaderLink ={TopHeaderLink} />
 			<div className="container nav_design">
          <div className="row">
@@ -20,11 +22,12 @@ render() {
              </a>
          </div>
     <div className="col-md-6 col-sm-6">
-      <ul class="sf-menu menu_style" id="fh5co-primary-menu">
-			{NavBarData.map(p => <li className="active"><a className="menu_style" href="index.html">{p.navBar}</a></li>)}
+      <ul class="sf-menu menu_style " id="fh5co-primary-menu">
+			{NavBarData.map(p => <li className="active"><Link to={p.path} className="menu_style">{p.navBar}</Link></li>)}
       </ul>
     </div>
   </div>
+</div>
 </div>
 
 </BrowserRouter >
