@@ -22,8 +22,8 @@ return(
              </a>
          </div>
     <div className="col-md-6 col-sm-6">
-      <ul class="sf-menu menu_style " id="fh5co-primary-menu">
-			{NavBarData.map(p => <li className="active"><Link to={p.path} className="menu_style">{p.navBar}</Link></li>)}
+      <ul className="sf-menu menu_style " id="fh5co-primary-menu">
+			{NavBarData.map(p => <li className="active" key={p.id}><Link to={p.path} className="menu_style">{p.navBar}</Link></li>)}
       </ul>
     </div>
   </div>
