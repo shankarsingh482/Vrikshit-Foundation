@@ -16,7 +16,6 @@ render(){
 					</div>
 				</div>
 
-
 				<div className="row row-bottom-padded-md">
 					<div className="col-md-12">
 						<ul id="fh5co-portfolio-list">
