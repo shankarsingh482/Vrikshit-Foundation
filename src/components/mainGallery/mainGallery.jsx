@@ -3,6 +3,7 @@ import './mainGallery.css';
 import MainGalleryListmap from './mainGalleryListmap';
 import {mainGalleryData} from './mainGalleryData';
 import HorizontalLine from '../common/horizontalline';
+import Button from '../common/button';
 class MainGallery extends React.Component{
 
 render(){
@@ -24,6 +25,7 @@ render(){
 						</ul>
 					</div>
 				</div>
+				<Button description ="See Gallery" classNames = "btn btn-primary btn-lg"/>
         </div>
         </div>
   )
