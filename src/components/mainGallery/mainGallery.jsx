@@ -1,4 +1,8 @@
 import React from 'react';
+import {
+  Link,
+  BrowserRouter
+} from 'react-router-dom'
 import './mainGallery.css';
 import MainGalleryListmap from './mainGalleryListmap';
 import {mainGalleryData} from './mainGalleryData';
@@ -23,6 +27,12 @@ render(){
 						</ul>
 					</div>
 				</div>
+	<BrowserRouter><div class="row">
+  <div class="col-md-4 col-md-offset-4 text-center animate-box">
+  <Link to="/gallery" className="btn btn-primary btn-lg">See Gallery</Link>
+  </div>
+  </div>
+  </BrowserRouter>
         </div>
         </div>
   )
