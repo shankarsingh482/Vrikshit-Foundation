@@ -7,19 +7,19 @@ class Feature extends React.Component{
   render (){
     return (<>
 <div id="fh5co-features">
-			<div class="container">
-			 	<div class="row">
+			<div className="container">
+			 	<div className="row">
          {featureData.map(p =>
-				  	<div class="col-md-4">
-					  	<div class="feature-left">
-							 <span class="icon icon-size">
+				  	<div className="col-md-4" key={p.id}>
+					  	<div className="feature-left">
+							 <span className="icon icon-size">
 							  	<FontAwesomeIcon icon={p.iconName}/>
 						  	</span>
-						       	<div class="feature-copy">
-							       	<h3>{p.headline}</h3>
-							        	<p>{p.details}</p>
-						           		<p><a href="#">Learn More</a></p>
-						      	</div>
+								<div className="feature-copy">
+									<h3>{p.headline}</h3>
+									<p>{p.details}</p>
+									<p><a href="#">Learn More</a></p>
+								</div>
 					 	</div>
 					</div>
          )}
