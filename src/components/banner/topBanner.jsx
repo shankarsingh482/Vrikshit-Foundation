@@ -31,7 +31,7 @@ class TopBanner extends React.Component{
   render() {
     const {index,direction} = this.state
       return (
-        <div className="container-fluid topbanner">
+        <div className="container-fluid">
         <div className="row">
            <div className="col-lg-12 col-sm-12 p0 m0">
         <Carousel

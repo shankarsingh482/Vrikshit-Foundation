@@ -1,14 +1,20 @@
-import {faFacebook, faTwitter , faInstagram} from '@fortawesome/free-brands-svg-icons'
-
+import {faFacebook, faTwitter , faInstagram} from '@fortawesome/free-brands-svg-icons';
+import Home from '../Pages/Home/Home';
+import AboutUs from '../Pages/AboutUs/AboutUs';
+import Gallery from '../Pages/Gallery/Gallery';
+import Donation from '../Pages/Donation/Donation';
+import Team from '../Pages/Team/Team';
+import Achievement from '../Pages/Achievement/Achievement';
+import ContactUs from '../Pages/ContactUs/ContactUs';
 
 export const NavBarData = [
-  {id:1,navBar:'Home',path:'/',component:'Home'},
-  {id:2,navBar:'About Us',path:'/aboutus',component:'AboutUs'},
-  {id:3,navBar:'Gallery',path:'gallery',component:'Gallery'},
-  {id:4,navBar:'Donation',path:'donation',component:'Donation'},
-  {id:5,navBar:'Team',path:'team',component:'Team'},
-  {id:6,navBar:'Achievement',path:'achievement',component:'Achievement'},
-  {id:7,navBar:'Contact Us',path:'contactus',component:'ContactUs'},
+  {id:1,navBar:'Home',path:'/',component:Home},
+  {id:2,navBar:'About Us',path:'/aboutus',component:AboutUs},
+  {id:3,navBar:'Gallery',path:'/gallery',component:Gallery},
+  {id:4,navBar:'Donation',path:'/donation',component:Donation},
+  {id:5,navBar:'Team',path:'/team',component:Team},
+  {id:6,navBar:'Achievement',path:'/achievement',component:Achievement},
+  {id:7,navBar:'Contact Us',path:'/contactus',component:ContactUs},
 ]
 
 export const TopHeaderLink = [
