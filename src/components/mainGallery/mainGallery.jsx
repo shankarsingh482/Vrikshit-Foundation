@@ -1,9 +1,12 @@
 import React from 'react';
+import {
+  Link,
+  BrowserRouter
+} from 'react-router-dom'
 import './mainGallery.css';
 import MainGalleryListmap from './mainGalleryListmap';
 import {mainGalleryData} from './mainGalleryData';
 import HorizontalLine from '../common/horizontalline';
-import Button from '../common/button';
 class MainGallery extends React.Component{
 
 render(){
@@ -24,7 +27,12 @@ render(){
 						</ul>
 					</div>
 				</div>
-				<Button description ="See Gallery" classNames = "btn btn-primary btn-lg"/>
+	<BrowserRouter><div class="row">
+  <div class="col-md-4 col-md-offset-4 text-center animate-box">
+  <Link to="/gallery" className="btn btn-primary btn-lg">See Gallery</Link>
+  </div>
+  </div>
+  </BrowserRouter>
         </div>
         </div>
   )
