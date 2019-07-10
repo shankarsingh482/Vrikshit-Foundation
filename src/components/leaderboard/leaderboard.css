@@ -1,0 +1,12 @@
+
+.fh5co-testimonial figure img, .fh5co-team figure img {
+  width: 130px;
+height: 130px;
+border: 10px solid #fff;
+background-size: cover;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+border-radius: 50%;
+background-color:  red;
+}
