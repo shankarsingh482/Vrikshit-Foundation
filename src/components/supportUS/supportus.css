@@ -1,0 +1,49 @@
+
+.heading-section h3
+{
+  font-size: 40px;
+font-weight: 300;
+position: relative;
+color: #5a5a5a;
+font-family: "Open Sans", Arial, sans-serif;
+font-weight: 400;
+margin: 30px 0 30px 0;
+}
+
+
+.hr_style {
+  width:100px;
+  background-color: #ff5722;
+  height: 2px;
+  margin-bottom: 45px;
+}
+
+.services {
+  background: #ff5722;
+  background: #fff;
+  padding: 40px 20px 20px 20px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.services p {
+  font-size: 16px;
+  color: gray;
+}
+
+.services h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ff5722;
+}
+
+.services span {
+  margin-bottom: 30px;
+  display: block;
+  width: 100%;
+  color: #ff5722;
+  font-size: 40px;
+}
