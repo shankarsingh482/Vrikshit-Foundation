@@ -10,3 +10,14 @@ background-size: cover;
 border-radius: 50%;
 background-color:  red;
 }
+
+.fh5co-testimonial, .fh5co-team {
+  position: relative;
+  background: #fff;
+  padding: 4em 0;
+  border-radius: 5px;
+}
+
+.fh5co-section-gray {
+  background: rgba(0, 0, 0, 0.04);
+}
