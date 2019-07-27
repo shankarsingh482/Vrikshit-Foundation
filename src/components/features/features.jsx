@@ -5,7 +5,7 @@ import {featureData} from './featureData'
 
 class Feature extends React.Component{
   render (){
-    return (<>
+    return (
 <div id="fh5co-features">
 			<div className="container">
 			 	<div className="row">
@@ -26,8 +26,6 @@ class Feature extends React.Component{
 			</div>
 </div>
 </div>
-
-    </>
     )
   }
 }
