@@ -1,6 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faPhone, faEnvelope, faGlobeAsia } from '@fortawesome/free-solid-svg-icons';
+import {
+  faMapMarkerAlt,
+  faPhone,
+  faEnvelope,
+  faGlobeAsia
+} from '@fortawesome/free-solid-svg-icons';
 import Input from '../../common/Input';
 import Button from '../../common/Button';
 import './ContactForm.css';
@@ -12,21 +17,27 @@ class ContactUs extends React.PureComponent {
       name: '',
       email: '',
       message: ''
-    }
+    };
   }
-  changeHandler = (e) => {
+  changeHandler = e => {
     const val = e.target.value;
-    this.setState({ [e.target.name]:val })
-  }
+    this.setState({ [e.target.name]: val });
+    localStorage.setItem("name", this.state.name);
+    localStorage.setItem("email", this.state.email);
+    localStorage.setItem("message", this.state.message);
+  };
   render() {
-    const {name, email, message} = this.state;
+    const { name, email, message } = this.state;
     return (
       <div className="container">
         <h1 className="text-center">CONTACT US</h1>
         <div className="row">
           <div className="col-lg-6">
             <h2>Our Address</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <p>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </p>
             <div className="commonAddressFieldsStyle">
               <FontAwesomeIcon icon={faMapMarkerAlt} />
               <span className="commonAddressFieldsStyle">Address</span>
@@ -45,7 +56,7 @@ class ContactUs extends React.PureComponent {
             </div>
           </div>
           <div className="col-lg-6">
-            <form action="#" method="post">
+            <form>
               <div className="row">
                 <div className="col-lg-6">
                   <Input
@@ -58,7 +69,7 @@ class ContactUs extends React.PureComponent {
                     required
                     changeHandler={this.changeHandler}
                   />
-                  </div>
+                </div>
                 <div className="col-lg-6">
                   <Input
                     id="email"
@@ -92,7 +103,7 @@ class ContactUs extends React.PureComponent {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 

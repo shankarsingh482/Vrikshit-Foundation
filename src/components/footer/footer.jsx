@@ -1,14 +1,19 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './footer.css';
-import HorizontalLine from '../common/horizontalline';
+import { SocialMedia } from './footerData';
 
 const Footer = () => {
   return (
-    <div>
-      <HorizontalLine className="hr_style" />
-      <p className="footer-text">&copy;2019 Vrikshit Foundation</p>
+    <div className="text-center footer">
+      {SocialMedia.map(p => (
+        <a href={p.link} key={p.id} target="_blank" className='footerSocialIcon'>
+          <FontAwesomeIcon size='2x' icon={p.IclassName} />
+        </a>
+      ))}
+      <span className="copyrightText">&copy;2019 Vrikshit Foundation</span>
     </div>
-  )
+  );
 };
 
 export default Footer;
