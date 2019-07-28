@@ -6,8 +6,20 @@ import Button from '../../common/Button';
 import './ContactForm.css';
 
 class ContactUs extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: ''
+    }
+  }
+  changeHandler = (e) => {
+    const val = e.target.value;
+    this.setState({ [e.target.name]:val })
+  }
   render() {
-    const {name, email, message} = this.props;
+    const {name, email, message} = this.state;
     return (
       <div className="container">
         <h1 className="text-center">CONTACT US</h1>
@@ -44,6 +56,7 @@ class ContactUs extends React.PureComponent {
                     className="form-control commonFormFieldsStyle"
                     placeholder="Name"
                     required
+                    changeHandler={this.changeHandler}
                   />
                   </div>
                 <div className="col-lg-6">
@@ -55,6 +68,7 @@ class ContactUs extends React.PureComponent {
                     className="form-control commonFormFieldsStyle"
                     placeholder="Email"
                     required
+                    changeHandler={this.changeHandler}
                   />
                 </div>
               </div>
@@ -66,6 +80,7 @@ class ContactUs extends React.PureComponent {
                 className="form-control commonFormFieldsStyle minHeight"
                 placeholder="Message"
                 required
+                onChange={this.changeHandler}
               />
               <Button
                 type="submit"
