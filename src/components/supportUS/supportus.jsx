@@ -1,8 +1,8 @@
 import React from 'react';
 import './supportus.css';
 import HorizontalLine from '../common/horizontalline';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import Blocks from '../common/Blocks';
+import SupportUsContent from './suppostUsContent';
 
 class Support extends React.Component {
   render() {
@@ -23,78 +23,11 @@ class Support extends React.Component {
         </div>
         <div className="container">
           <div className="row text-center">
-            <div className="col-md-4 col-sm-4">
-              <div className="services animate-box">
-                <span>
-                  <FontAwesomeIcon icon={faHeart} />
-                </span>
-                <h3>Water Project In Kenya</h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-4">
-              <div className="services animate-box">
-                <span>
-                  <FontAwesomeIcon icon={faHeart} />
-                </span>
-                <h3>Shelter Giving</h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-4">
-              <div className="services animate-box">
-                <span>
-                  <FontAwesomeIcon icon={faHeart} />
-                </span>
-                <h3>Shelter Giving</h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-4">
-              <div className="services animate-box">
-                <span>
-                  <FontAwesomeIcon icon={faHeart} />
-                </span>
-                <h3>Water Project In Kenya</h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-4">
-              <div className="services animate-box">
-                <span>
-                  <FontAwesomeIcon icon={faHeart} />
-                </span>
-                <h3>Water Project In Kenya</h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-4">
-              <div className="services animate-box">
-                <span>
-                  <FontAwesomeIcon icon={faHeart} />
-                </span>
-                <h3>Midical Mission</h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-              </div>
-            </div>
+            <Blocks
+              columnLayout="col-md-4 col-sm-4"
+              blockLayout="services animate-box"
+              allData={SupportUsContent}
+            />
           </div>
         </div>
       </div>
