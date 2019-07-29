@@ -1,5 +1,7 @@
-.footer-text {
-  text-align: center;
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 1%;
 }
 
 .hr_style {
@@ -7,4 +9,18 @@
   background-color: #ff5722;
   height: 2px;
   margin-bottom: 45px;
+}
+
+.footerSocialIcon {
+  padding: 8px;
+  color: #2fc74a;
+}
+
+.footerSocialIcon :hover {
+  color: #fff;
+}
+
+.copyrightText {
+  display: block;
+  padding-top: 8px;
 }

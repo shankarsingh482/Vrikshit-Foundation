@@ -1,57 +1,72 @@
-
-
-
-.header
-{
+.header {
   list-style: none;
 }
 
-.nav_above_design
-{
+.nav_above_design {
   background: black;
   color: green;
   padding: 15px;
-  width: 100%;
-}
-.nav_above_design:hover{
-  color:pink;
-}
-.social_icon_position
-{
-  padding:10px;
-  color: lightgreen;
-}
-.social_icon_position:hover{
-  color: lightseagreen;
 }
 
-.nav_above_text_position
-{
+.social_icon_position {
   padding: 10px;
   color: lightgreen;
 }
-.logo_design
-{
-height: 60px;
-border-radius: 50%;
-margin-top: -20px;
+.social_icon_position:hover {
+  color: #fff;
+  text-decoration: none;
 }
-.nav_design
-{
 
-  padding:15px;
+.logo_design {
+  height: 60px;
+  border-radius: 50%;
+  margin-top: -20px;
+}
+.nav_design {
+  padding: 15px;
   background-color: white;
   width: 100%;
 }
-.menu_style
-{
-  background-color: white;
+.menu_style {
+  background-color: white !important;
 }
-.menu_style:hover{
-  color:green;
-
+.menu_style:hover {
+  color: green !important;
 }
 
-.all-Pages-Common {
-  padding-top: 10%;
+.allMenu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (min-width: 1366px) {
+  .all-Pages-Common {
+    padding-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .all-Pages-Common {
+    padding-top: 13%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .all-Pages-Common {
+    padding-top: 17%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .all-Pages-Common {
+    padding-top: 36%;
+  }
+
+  .allMenu {
+    justify-content: left;
+  }
+
+  .socialIconMob {
+    margin-top: -5%;
+  }
 }
