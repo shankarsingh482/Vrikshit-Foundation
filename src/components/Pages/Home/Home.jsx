@@ -3,17 +3,17 @@ import TopBanner from '../../banner/topBanner';
 import Feature from '../../features/features';
 import MainGallery from '../../mainGallery/mainGallery';
 import Leaderboard from '../../leaderboard/leaderboard';
-import Support from '../../supportUS/supportus'
+import Support from '../../supportUS/supportus';
 const Home = () => {
   return (
     <>
       <TopBanner />
       <Feature />
       <MainGallery />
-      <Leaderboard/>
-      <Support/>
+      <Leaderboard />
+      <Support />
     </>
-  )
+  );
 };
 
 export default Home;

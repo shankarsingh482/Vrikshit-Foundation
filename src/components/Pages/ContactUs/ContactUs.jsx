@@ -9,6 +9,9 @@ import {
 import Input from '../../common/Input';
 import Button from '../../common/Button';
 import './ContactForm.css';
+import HorizontalLine from '../../common/horizontalline';
+import Blocks from '../../common/Blocks';
+import ContactUsContent from './ContactUsContent';
 
 class ContactUs extends React.PureComponent {
   constructor(props) {
@@ -102,6 +105,29 @@ class ContactUs extends React.PureComponent {
             </form>
           </div>
         </div>
+        <div id="fh5co-services-section">
+          <div className="row">
+            <div className="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+              <h3>Our Branches</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+                est facilis maiores, perspiciatis accusamus asperiores sint
+                consequuntur debitis.
+              </p>
+            </div>
+          </div>
+          <HorizontalLine className="hr_style" />
+
+          <div className="row text-center">
+            <Blocks
+              columnLayout="col-md-4 col-sm-4"
+              blockLayout="services animate-box"
+              allData={ContactUsContent}
+            />
+          </div>
+
+      </div>
+
       </div>
     );
   }
