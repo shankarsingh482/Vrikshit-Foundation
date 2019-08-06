@@ -2,6 +2,7 @@
   background-color: #000;
   color: #fff;
   padding: 1%;
+  margin-top: 40px;
 }
 
 .hr_style {
@@ -16,7 +17,7 @@
   color: #2fc74a;
 }
 
-.footerSocialIcon :hover {
+.footerSocialIcon:hover {
   color: #fff;
 }
 

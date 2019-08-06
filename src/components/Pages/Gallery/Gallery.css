@@ -1,0 +1,79 @@
+.backgroundImgUrl1{
+  background-image: url("../../../assests/gallery/image1.jpeg");
+}
+
+.backgroundImgUrl2{
+  background-image: url("../../../assests/gallery/image2.jpeg");
+}
+
+.backgroundImgUrl3{
+  background-image: url("../../../assests/gallery/image3.jpeg");
+}
+
+.backgroundImgUrl4{
+  background-image: url("../../../assests/gallery/image4.jpeg");
+}
+
+.galleryContainer {
+  margin-top: -25px;
+}
+
+.galleryBanner {
+  background-image: url("../../../assests/gallery/banner.jpeg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  padding: 80px;
+}
+
+.galleryBannerHeading1 {
+  font-size: 4rem;
+  width: 50%;
+  color:#fff;
+}
+
+.galleryBannerHeading2 {
+  font-size: 5rem;
+  width: 50%;
+  color:#fff;
+}
+
+@media only screen and (max-width:768px) {
+  .galleryBanner {
+    padding: 50px;
+  }
+
+  .galleryBannerHeading1 {
+    font-size: 4rem;
+    width: 100%;
+    color:#fff;
+  }
+
+  .galleryBannerHeading2 {
+    font-size: 4rem;
+    width: 100%;
+    color:#fff;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .galleryBanner {
+    padding: 40px;
+  }
+
+  .galleryBannerHeading1 {
+    font-size: 4rem;
+    width: 100%;
+    color:#fff;
+  }
+
+  .galleryBannerHeading2 {
+    font-size: 4rem;
+    width: 100%;
+    color:#fff;
+  }
+
+  .galleryContainer {
+    margin-top: -35px;
+  }
+}
