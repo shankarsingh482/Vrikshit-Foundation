@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './mainGallery.css';
 import MainGalleryListmap from './mainGalleryListmap';
 import { mainGalleryData } from './mainGalleryData';
@@ -28,7 +28,6 @@ class MainGallery extends React.Component {
               </ul>
             </div>
           </div>
-          <BrowserRouter>
             <div className="row">
               <div className="col-md-4 col-md-offset-4 text-center animate-box">
                 <Link to="/gallery" className="btn btn-primary btn-lg">
@@ -36,7 +35,6 @@ class MainGallery extends React.Component {
                 </Link>
               </div>
             </div>
-          </BrowserRouter>
         </div>
       </div>
     );

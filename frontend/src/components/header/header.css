@@ -39,29 +39,7 @@
   justify-content: flex-end;
 }
 
-@media only screen and (min-width: 1366px) {
-  .all-Pages-Common {
-    padding-top: 10%;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .all-Pages-Common {
-    padding-top: 13%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .all-Pages-Common {
-    padding-top: 17%;
-  }
-}
-
 @media only screen and (max-width: 480px) {
-  .all-Pages-Common {
-    padding-top: 36%;
-  }
-
   .allMenu {
     justify-content: left;
   }
