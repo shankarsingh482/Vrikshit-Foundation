@@ -1,5 +1,4 @@
 import React from 'react';
-import './Missing.css';
 import NotFound from '../../../assests/common/page-not-found-404.png';
 
 const Missing = () => {
