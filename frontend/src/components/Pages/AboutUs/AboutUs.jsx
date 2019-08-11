@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './AboutUs.css';
 import Team from '../../common/Team';
 import Banner from '../../common/Banner';
 import { AboutUsData } from './AboutUSData';
-import Button from '../../common/Button';
 class AboutUs extends React.PureComponent {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -90,12 +91,9 @@ class AboutUs extends React.PureComponent {
           </div>
           <div class="row">
             <div class="col text-center">
-              <Button
-                type="submit"
-                className="btn btn-primary btn-lg"
-                name="submitContact"
-                value="See More"
-              />
+            <Link to="/leader" className="btn btn-primary btn-lg">
+            See More
+                </Link>
             </div>
           </div>
         </div>

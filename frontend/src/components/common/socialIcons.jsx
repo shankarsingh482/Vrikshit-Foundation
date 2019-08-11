@@ -2,13 +2,13 @@ import React from 'react';
 
 const SocialIcons = () =>{
   return (<div className="social-icons">
-  <a href="https://www.facebook.com/">
+  <a href="https://www.facebook.com/CYI2019">
     <i
       id="social-fb"
       className="fa fa-facebook-square fa-3x social"
     ></i>
   </a>
-  <a href="https://twitter.com/">
+  <a href="https://twitter.com/vrikshit">
     <i
       id="social-tw"
       className="fa fa-twitter-square fa-3x social"
@@ -20,7 +20,7 @@ const SocialIcons = () =>{
       className="fa fa-google-plus-square fa-3x social"
     ></i>
   </a>
-  <a href="mailto:bootsnipp@gmail.com">
+  <a href="mailto:vrikshitfoundation@gmail.com">
     <i
       id="social-em"
       className="fa fa-envelope-square fa-3x social"
