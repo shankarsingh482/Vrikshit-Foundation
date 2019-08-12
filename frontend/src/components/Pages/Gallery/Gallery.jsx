@@ -3,17 +3,18 @@ import { Link } from 'react-router-dom';
 import './Gallery.css';
 import { GalleryData } from './GalleryData';
 import HorizontalLine from '../../common/horizontalline';
-
+import Banner from '../../common/Banner';
 class Gallery extends React.PureComponent {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="galleryContainer">
-        <div className="galleryBanner">
-          <h1 className="galleryBannerHeading1">Gallery</h1>
-          <h1 className="galleryBannerHeading2">
-            We wish to bring many good things to life.
-          </h1>
-        </div>
+        <Banner
+          pageDescription="Gallery"
+          quotes="We wish to bring many good things to life."
+        />
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-md-offset-3 text-center heading-section animate-box">
