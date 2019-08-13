@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "92d8046fb0e054b2b24ebff2a3477413",
+    "revision": "1c29277ad7e23a37c4d1b83e46ce4fcd",
     "url": "/Vrikshit-Foundation/index.html"
   },
   {
-    "revision": "77ec46c4ea0d3cc79cf1",
-    "url": "/Vrikshit-Foundation/static/css/main.e4d94ddc.chunk.css"
+    "revision": "4bbe628a9cc7dd776746",
+    "url": "/Vrikshit-Foundation/static/css/main.6a5c5a11.chunk.css"
   },
   {
     "revision": "9185d32d64b82be959d4",
     "url": "/Vrikshit-Foundation/static/js/2.3bb48f94.chunk.js"
   },
   {
-    "revision": "77ec46c4ea0d3cc79cf1",
+    "revision": "4bbe628a9cc7dd776746",
     "url": "/Vrikshit-Foundation/static/js/main.b104bfd8.chunk.js"
   },
   {
