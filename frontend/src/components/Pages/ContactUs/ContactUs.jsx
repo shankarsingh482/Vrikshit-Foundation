@@ -22,7 +22,7 @@ class ContactUs extends React.PureComponent {
       name: '',
       email: '',
       message: '',
-      isFormFilledProfile:false
+      isFormFilledProfile: false
     };
     // this.changeHandler = this.changeHandler.bind(this);
     // this.handleSubmitMessage = this.handleSubmitMessage.bind(this);
@@ -30,30 +30,30 @@ class ContactUs extends React.PureComponent {
   changeHandler = e => {
     const val = e.target.value;
     this.setState({ [e.target.name]: val });
+  };
+
+  handleSubmitMessage(e) {
+    e.preventDefault();
+    console.log('starting to submit profile');
+    console.log('Profile Form appears filled');
+    const data = {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message
     };
 
-    handleSubmitMessage(e) {
-      e.preventDefault();
-      console.log('starting to submit profile');
-        console.log('Profile Form appears filled');
-        const data = {
-          name: this.state.name,
-          email:this.state.email,
-          message:this.state.message
-        };
-
-        request
-          .post('/api/messages')
-          .send(data)
-          .set('Accept', 'application/json')
-          .end((err, res) => {
-            if (err || !res.ok) {
-              console.log('Oh no! err');
-            } else {
-              console.log('Success');
-            }
-          });
-    }
+    request
+      .post('/api/messages')
+      .send(data)
+      .set('Accept', 'application/json')
+      .end((err, res) => {
+        if (err || !res.ok) {
+          console.log('Oh no! err');
+        } else {
+          console.log('Success');
+        }
+      });
+  }
 
   render() {
     const { name, email, message } = this.state;
@@ -69,19 +69,21 @@ class ContactUs extends React.PureComponent {
             </p>
             <div className="commonAddressFieldsStyle">
               <FontAwesomeIcon icon={faMapMarkerAlt} />
-              <span className="commonAddressFieldsStyle">Address</span>
+              <span className="commonAddressFieldsStyle">
+                Address : H-1 / 105 , III Floor Sector-11 Rohini
+              </span>
             </div>
             <div className="commonAddressFieldsStyle">
               <FontAwesomeIcon icon={faPhone} />
-              <span className="commonAddressFieldsStyle">Phone</span>
+              <span className="commonAddressFieldsStyle">Phone : +91-7827552596 , +91-9810778582</span>
             </div>
             <div className="commonAddressFieldsStyle">
               <FontAwesomeIcon icon={faEnvelope} />
-              <span className="commonAddressFieldsStyle">Email</span>
+              <span className="commonAddressFieldsStyle">Email : vrikshitfoundation@gmail.com</span>
             </div>
             <div className="commonAddressFieldsStyle">
               <FontAwesomeIcon icon={faGlobeAsia} />
-              <span className="commonAddressFieldsStyle">website</span>
+              <span className="commonAddressFieldsStyle">website : www.vrikshitfoundation.com</span>
             </div>
           </div>
           <div className="col-lg-6">
@@ -135,11 +137,6 @@ class ContactUs extends React.PureComponent {
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center heading-section animate-box">
               <h3>Our Branches</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-                est facilis maiores, perspiciatis accusamus asperiores sint
-                consequuntur debitis.
-              </p>
             </div>
           </div>
           <HorizontalLine className="hr_style" />
@@ -151,9 +148,7 @@ class ContactUs extends React.PureComponent {
               allData={ContactUsContent}
             />
           </div>
-
-      </div>
-
+        </div>
       </div>
     );
   }
