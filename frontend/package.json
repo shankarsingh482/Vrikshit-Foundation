@@ -10,6 +10,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "axios": "^0.19.0",
     "classnames": "^2.2.6",
+    "gh-pages": "^2.1.1",
     "nodemailer": "^6.3.0",
     "nodemon": "^1.19.1",
     "react": "^16.8.6",
@@ -20,6 +21,7 @@
     "superagent": "^5.1.0"
   },
   "precommit": "NODE_ENV=production lint-staged",
+  "homepage": "https://vrikshitfoundation.github.io/production",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
