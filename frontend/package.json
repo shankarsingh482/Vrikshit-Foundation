@@ -10,7 +10,6 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "axios": "^0.19.0",
     "classnames": "^2.2.6",
-    "gh-pages": "^2.1.1",
     "nodemailer": "^6.3.0",
     "nodemon": "^1.19.1",
     "react": "^16.8.6",
@@ -21,12 +20,14 @@
     "superagent": "^5.1.0"
   },
   "precommit": "NODE_ENV=production lint-staged",
-  "homepage": "https://vrikshitfoundation.github.io/production",
+  "homepage": "https://shankarsingh482.github.io/Vrikshit-Foundation/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,6 +52,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.2",
+    "gh-pages": "^2.1.1",
     "json-loader": "^0.5.7",
     "prettier": "^1.18.2"
   },

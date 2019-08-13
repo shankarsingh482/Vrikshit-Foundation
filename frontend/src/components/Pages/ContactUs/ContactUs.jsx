@@ -64,8 +64,8 @@ class ContactUs extends React.PureComponent {
           <div className="col-lg-6">
             <h2>Our Address</h2>
             <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
+              We reside where there are junk heaps, To fill the place with
+              plants and trees.
             </p>
             <div className="commonAddressFieldsStyle">
               <FontAwesomeIcon icon={faMapMarkerAlt} />
@@ -75,15 +75,21 @@ class ContactUs extends React.PureComponent {
             </div>
             <div className="commonAddressFieldsStyle">
               <FontAwesomeIcon icon={faPhone} />
-              <span className="commonAddressFieldsStyle">Phone : +91-7827552596 , +91-9810778582</span>
+              <span className="commonAddressFieldsStyle">
+                Phone : +91-7827552596 , +91-9810778582
+              </span>
             </div>
             <div className="commonAddressFieldsStyle">
               <FontAwesomeIcon icon={faEnvelope} />
-              <span className="commonAddressFieldsStyle">Email : vrikshitfoundation@gmail.com</span>
+              <span className="commonAddressFieldsStyle">
+                Email : vrikshitfoundation@gmail.com
+              </span>
             </div>
             <div className="commonAddressFieldsStyle">
               <FontAwesomeIcon icon={faGlobeAsia} />
-              <span className="commonAddressFieldsStyle">website : www.vrikshitfoundation.com</span>
+              <span className="commonAddressFieldsStyle">
+                website : www.vrikshitfoundation.com
+              </span>
             </div>
           </div>
           <div className="col-lg-6">
