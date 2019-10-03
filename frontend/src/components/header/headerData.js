@@ -8,9 +8,9 @@ export const NavBarData = [
   { id: 1, navBar: 'Home', path: '/' },
   { id: 2, navBar: 'About Us', path: '/aboutus' },
   { id: 3, navBar: 'Gallery', path: '/gallery' },
-  { id: 4, navBar: 'Donation', path: '/donation' },
+  // { id: 4, navBar: 'Donation', path: '/donation' },
   { id: 5, navBar: 'Team', path: '/team' },
-  { id: 6, navBar: 'Achievement', path: '/achievement' },
+  // { id: 6, navBar: 'Achievement', path: '/achievement' },
   { id: 7, navBar: 'Contact Us', path: '/contactus' }
 ];
 
