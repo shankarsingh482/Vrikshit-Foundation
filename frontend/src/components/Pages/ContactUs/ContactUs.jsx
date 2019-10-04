@@ -27,6 +27,9 @@ class ContactUs extends React.PureComponent {
     // this.changeHandler = this.changeHandler.bind(this);
     // this.handleSubmitMessage = this.handleSubmitMessage.bind(this);
   }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   changeHandler = e => {
     const val = e.target.value;
     this.setState({ [e.target.name]: val });
