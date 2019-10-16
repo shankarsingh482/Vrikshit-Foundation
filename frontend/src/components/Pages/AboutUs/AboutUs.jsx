@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import './AboutUs.css';
 import Team from '../../common/Team';
 import Banner from '../../common/Banner';
@@ -11,8 +10,12 @@ class AboutUs extends React.PureComponent {
   }
   render() {
     return (
-      <div>
-        <Banner pageDescription="About Us" quotes="what describe us" />
+      <div className="aboutContainer">
+        <Banner
+          bannerStyle="aboutBanner"
+          pageDescription="About Us"
+          quotes="what describe us"
+        />
         <div className="bread-bar">
           <div className="container">
             <div className="row">
@@ -91,9 +94,9 @@ class AboutUs extends React.PureComponent {
           </div>
           <div class="row">
             <div class="col text-center">
-            <Link to="/team" className="btn btn-primary btn-lg">
-            See More
-                </Link>
+              <Link to="/team" className="btn btn-primary btn-lg">
+                See More
+              </Link>
             </div>
           </div>
         </div>

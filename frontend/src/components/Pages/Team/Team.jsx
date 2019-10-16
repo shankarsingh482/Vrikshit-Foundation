@@ -8,17 +8,19 @@ class Team extends React.PureComponent {
   }
   render() {
     return (
-      <div>
-        <Banner pageDescription="Team Members" quotes="Together we are Stronger" />
+      <div className="teamContainer">
+        <Banner
+          bannerStyle="teamCover"
+          pageDescription="Team Members"
+          quotes="Together we are Stronger"
+        />
         <section id="team" class="pb-5">
           <div class="container">
             <h5 class="section-title h1">OUR TEAM</h5>
             <div class="row">
               {teamContentData.map(data => (
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                  <div
-                    class="image-flip"
-                  >
+                  <div class="image-flip">
                     <div class="mainflip">
                       <div class="frontside">
                         <div class="card">

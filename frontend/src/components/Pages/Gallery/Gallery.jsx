@@ -4,6 +4,8 @@ import './Gallery.css';
 import { GalleryData } from './GalleryData';
 import HorizontalLine from '../../common/horizontalline';
 import Banner from '../../common/Banner';
+import Breadcrumb from '../../common/BreadCrumb';
+
 class Gallery extends React.PureComponent {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -12,9 +14,11 @@ class Gallery extends React.PureComponent {
     return (
       <div className="galleryContainer">
         <Banner
+          bannerStyle="galleryBanner"
           pageDescription="Gallery"
           quotes="We wish to bring many good things to life."
         />
+        <Breadcrumb second="Gallery" />
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-md-offset-3 text-center heading-section animate-box">

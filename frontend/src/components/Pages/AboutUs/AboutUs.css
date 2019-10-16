@@ -1,16 +1,17 @@
 .image-aboutus-banner {
-  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://images.pexels.com/photos/673649/pexels-photo-673649.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.pexels.com/photos/673649/pexels-photo-673649.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   color: #fff;
   padding-top: 110px;
-  padding-bottom:110px;
-  margin-top:70px
+  padding-bottom: 110px;
+  margin-top: 70px;
 }
 .bread-bar {
   background: #f9f9f9;
-  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   min-height: 40px;
   height: auto;
   position: relative;
@@ -30,46 +31,57 @@
   color: #666;
 }
 .breadcrumb > li + li::before {
-  content: "\203A";
+  content: '\203A';
   color: #999;
   padding: 0 8px;
 }
 
-.aboutusDescription{
+.aboutusDescription {
   font-size: 16px;
   color: #848484;
   padding: 10px;
 }
-.social-icons{
-
+.social-icons {
   margin: 0;
   padding: 0;
-  font-size : 10px;
+  font-size: 10px;
 }
 .social {
-  margin:7px 7px 7px 0px;
-  color:#232323;
+  margin: 7px 7px 7px 0px;
+  color: #232323;
 }
-
 
 #social-fb:hover {
-   color: #3B5998;
-   transition:all .25s;
+  color: #3b5998;
+  transition: all 0.25s;
 }
 #social-tw:hover {
-   color: #4099FF;
-   transition:all .25s;
+  color: #4099ff;
+  transition: all 0.25s;
 }
 #social-gp:hover {
-   color: #d34836;
-   transition:all .25s;
+  color: #d34836;
+  transition: all 0.25s;
 }
 #social-em:hover {
-   color: #f39c12;
-   transition:all .25s;
+  color: #f39c12;
+  transition: all 0.25s;
 }
 
-.seeMoreButton{
-
+.seeMoreButton {
   padding: 10px;
+}
+
+.aboutBanner {
+  background-image: url('../../../assests/gallery/image2.jpeg');
+}
+
+.aboutContainer {
+  margin-top: -25px;
+}
+
+@media only screen and (max-width: 480px) {
+  .aboutContainer {
+    margin-top: -35px;
+  }
 }
