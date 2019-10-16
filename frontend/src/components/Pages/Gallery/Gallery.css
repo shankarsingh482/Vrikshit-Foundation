@@ -1,17 +1,17 @@
-.backgroundImgUrl1{
-  background-image: url("../../../assests/gallery/image1.jpeg");
+.backgroundImgUrl1 {
+  background-image: url('../../../assests/gallery/image1.jpeg');
 }
 
-.backgroundImgUrl2{
-  background-image: url("../../../assests/gallery/image2.jpeg");
+.backgroundImgUrl2 {
+  background-image: url('../../../assests/gallery/image2.jpeg');
 }
 
-.backgroundImgUrl3{
-  background-image: url("../../../assests/gallery/image3.jpeg");
+.backgroundImgUrl3 {
+  background-image: url('../../../assests/gallery/image3.jpeg');
 }
 
-.backgroundImgUrl4{
-  background-image: url("../../../assests/gallery/image4.jpeg");
+.backgroundImgUrl4 {
+  background-image: url('../../../assests/gallery/image4.jpeg');
 }
 
 .galleryContainer {
@@ -19,60 +19,10 @@
 }
 
 .galleryBanner {
-  background-image: url("../../../assests/gallery/banner.jpeg");
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  padding: 80px;
+  background-image: url('../../../assests/gallery/banner.jpeg');
 }
 
-.galleryBannerHeading1 {
-  font-size: 4rem;
-  width: 50%;
-  color:#fff;
-}
-
-.galleryBannerHeading2 {
-  font-size: 5rem;
-  width: 50%;
-  color:#fff;
-}
-
-@media only screen and (max-width:768px) {
-  .galleryBanner {
-    padding: 50px;
-  }
-
-  .galleryBannerHeading1 {
-    font-size: 4rem;
-    width: 100%;
-    color:#fff;
-  }
-
-  .galleryBannerHeading2 {
-    font-size: 4rem;
-    width: 100%;
-    color:#fff;
-  }
-}
-
-@media only screen and (max-width:480px) {
-  .galleryBanner {
-    padding: 40px;
-  }
-
-  .galleryBannerHeading1 {
-    font-size: 4rem;
-    width: 100%;
-    color:#fff;
-  }
-
-  .galleryBannerHeading2 {
-    font-size: 4rem;
-    width: 100%;
-    color:#fff;
-  }
-
+@media only screen and (max-width: 480px) {
   .galleryContainer {
     margin-top: -35px;
   }
@@ -87,16 +37,16 @@
     padding: 3em 0;
   }
 }
-.h3_gallery_heading{
-    font-size: 40px;
-    font-weight: 300;
-    position: relative;
+.h3_gallery_heading {
+  font-size: 40px;
+  font-weight: 300;
+  position: relative;
 }
-#fh5co-portfolio p{
+#fh5co-portfolio p {
   margin-top: 40px;
   font-size: 20px;
   color: #848484;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   margin-bottom: 40px;
 }
 #fh5co-portfolio-list {
@@ -145,7 +95,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  content: "";
+  content: '';
   z-index: 80;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -230,11 +180,9 @@
   height: 2px;
   background: #ff5722;
 }
-.hr_style
- {
-    width:100px;
-    background-color: #ff5722;
-    height: 2px;
-    margin-bottom: 45px;
+.hr_style {
+  width: 100px;
+  background-color: #ff5722;
+  height: 2px;
+  margin-bottom: 45px;
 }
-
