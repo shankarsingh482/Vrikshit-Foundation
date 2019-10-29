@@ -10,6 +10,7 @@ import CleanDrive from './components/Pages/Gallery/Pages/CleanDrive';
 import GreenDrive from './components/Pages/Gallery/Pages/GreenDrive';
 import AwarenessDrive from './components/Pages/Gallery/Pages/AwarenessDrive';
 import HappinessDrive from './components/Pages/Gallery/Pages/HappinessDrive';
+import Faq from './components/Pages/Faq/Faq'
 
 export const AppRoutes = [
   { id: 1, path: '/', exact: true, component: Home },
@@ -23,5 +24,6 @@ export const AppRoutes = [
   { id: 10, path: '/gallery/greenDrive', exact: true, component: GreenDrive },
   { id: 11, path: '/gallery/awarenessDrive', exact: true, component: AwarenessDrive },
   { id: 12, path: '/gallery/happinessDrive', exact: true, component: HappinessDrive },
+  {id:13,path:'/faq',exact:true,component:Faq},
   { id: 8, exact: false, component: Missing },
 ];
