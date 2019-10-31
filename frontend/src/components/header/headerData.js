@@ -17,7 +17,7 @@ export const NavBarData = [
 export const TopHeaderLink = [
   { id: 1, TopHeaderLink: '/Faq', TopHeaderLinkName: 'FAQ' },
   { id: 2, TopHeaderLink: '#', TopHeaderLinkName: 'Forum' },
-  { id: 3, TopHeaderLink: '#', TopHeaderLinkName: 'Contact' }
+  { id: 3, TopHeaderLink: '/contactus', TopHeaderLinkName: 'Contact' }
 ];
 
 export const SocialMedia = [

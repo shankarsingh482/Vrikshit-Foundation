@@ -22,6 +22,29 @@ const ContactUsContent = [
     content:
       'Navi Mumbai'
   },
+  {
+    id: 4,
+    headline: 'Bhilwara',
+    designIcon: faHeart,
+    content:
+      'Rajasthan'
+  },
+  {
+    id: 5,
+    headline: 'Chattisgrah',
+    designIcon: faHeart,
+    content:
+      'Chattisgrah'
+  },
+  {
+    id: 6,
+    headline: 'Gujrat',
+    designIcon: faHeart,
+    content:
+      'Gujrat'
+  },
+
+
 
 ];
 
