@@ -9,7 +9,7 @@ export const NavBarData = [
   { id: 2, navBar: 'About Us', path: '/aboutus' },
   { id: 3, navBar: 'Gallery', path: '/gallery' },
   // { id: 4, navBar: 'Donation', path: '/donation' },
-  { id: 5, navBar: 'Team', path: '/team' },
+  { id: 5, navBar: 'Team', path: '/teamInformation' },
   // { id: 6, navBar: 'Achievement', path: '/achievement' },
   { id: 7, navBar: 'Contact Us', path: '/contactus' }
 ];
