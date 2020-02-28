@@ -1,6 +1,7 @@
 import React from 'react';
 import Pagination from './Pagination';
 import {teamContentData} from './teamContent';
+import TopBanner from '.../../../src/components/banner/topBanner';
 
 class PaginationMain extends React.Component {
   constructor() {
@@ -22,12 +23,15 @@ class PaginationMain extends React.Component {
       // update state with new page of items
       this.setState({ pageOfItems: pageNum});
   }
-
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
       console.log('exampleItems',this.state.exampleItems, this.state.pageOfItems)
       return (
           <div>
-              <section id="team" class="pb-5">
+            <TopBanner pagedescription="teamPage" />
+          <section id="team" class="pb-5">
           <div class="container">
             <h5 class="section-title h1">OUR TEAM</h5>
             <div class="row">

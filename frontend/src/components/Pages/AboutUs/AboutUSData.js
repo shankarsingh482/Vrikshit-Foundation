@@ -1,23 +1,24 @@
 
-import Dummy from '../../../assests/profile/dummy.png'
-import DummyGirl from '../../../assests/profile/dummy_girl.png'
+import Piyush from '../../../assests/profile/mota.png'
+import Shankar from '../../../assests/profile/shankargunda.jpg'
+import Garima from '../../../assests/profile/garima1.jpg'
 
 export const AboutUsData = [
   {
     id: 1,
-    profileimg: Dummy,
+    profileimg: Shankar,
     name:'Shankar Singh',
-    description :'President and Founder of Vrikshit Foundation'
+    description :'President and Founder'
   },
   {
     id: 2,
-    profileimg: DummyGirl,
+    profileimg: Garima,
     name:'Garima Jain',
     description :'Treasurer'
   },
   {
     id: 3,
-    profileimg: Dummy,
+    profileimg: Piyush,
     name:'Piyush Badgujar',
     description :'Vice President'
   },

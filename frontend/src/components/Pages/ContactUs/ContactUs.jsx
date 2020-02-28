@@ -6,14 +6,14 @@ import {
   faEnvelope,
   faGlobeAsia
 } from '@fortawesome/free-solid-svg-icons';
-import request from 'superagent';
-
+import axios from 'axios';
 import Input from '../../common/Input';
 import Button from '../../common/Button';
 import './ContactForm.css';
 import HorizontalLine from '../../common/horizontalline';
 import Blocks from '../../common/Blocks';
 import ContactUsContent from './ContactUsContent';
+import Banner from '../../common/Banner';
 
 class ContactUs extends React.PureComponent {
   constructor(props) {
@@ -24,8 +24,8 @@ class ContactUs extends React.PureComponent {
       message: '',
       isFormFilledProfile: false
     };
-    // this.changeHandler = this.changeHandler.bind(this);
-    // this.handleSubmitMessage = this.handleSubmitMessage.bind(this);
+    this.changeHandler = this.changeHandler.bind(this);
+    this.handleSubmitMessage = this.handleSubmitMessage.bind(this);
   }
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -33,6 +33,7 @@ class ContactUs extends React.PureComponent {
   changeHandler = e => {
     const val = e.target.value;
     this.setState({ [e.target.name]: val });
+
   };
 
   handleSubmitMessage(e) {
@@ -44,24 +45,32 @@ class ContactUs extends React.PureComponent {
       email: this.state.email,
       message: this.state.message
     };
-
-    request
-      .post('/api/messages')
-      .send(data)
-      .set('Accept', 'application/json')
-      .end((err, res) => {
-        if (err || !res.ok) {
-          console.log('Oh no! err');
-        } else {
-          console.log('Success');
+      axios({
+        method: "POST",
+        url:"http://localhost:3002/send",
+        data:  data
+      }).then((response)=>{
+        if (response.data.status === 'success'){
+          alert("Message Sent.");
+          this.resetForm()
+        }else if(response.data.status === 'fail'){
+          alert("Message failed to send.")
         }
-      });
+      })
   }
 
   render() {
     const { name, email, message } = this.state;
     return (
-      <div className="container">
+      <React.Fragment>
+      <div className="aboutContainer">
+        <Banner
+          bannerStyle="aboutBanner"
+          pageDescription="About Us"
+          quotes="what describe us"
+        />
+        </div>
+        <div className ="container">
         <h1 className="text-center">CONTACT US</h1>
         <div className="row">
           <div className="col-lg-6">
@@ -159,6 +168,7 @@ class ContactUs extends React.PureComponent {
           </div>
         </div>
       </div>
+           </React.Fragment>
     );
   }
 }
