@@ -8,9 +8,9 @@ const Team = (props) => {
     <div className="team-content">
       <h3>{name}</h3>
        <div className="border-team"></div>
-      <p>
+      <p><b>
         {description}
-      </p>
+      </b></p>
      <SocialIcons/>
   </div>
   </React.Fragment>

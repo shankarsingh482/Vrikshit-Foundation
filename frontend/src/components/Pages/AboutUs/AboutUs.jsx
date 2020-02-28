@@ -94,7 +94,7 @@ class AboutUs extends React.PureComponent {
           </div>
           <div class="row">
             <div class="col text-center">
-              <Link to="/team" className="btn btn-primary btn-lg">
+              <Link to="/teamInformation" className="btn btn-primary btn-lg">
                 See More
               </Link>
             </div>

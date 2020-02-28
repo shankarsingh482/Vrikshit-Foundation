@@ -44,7 +44,7 @@
 .social-icons {
   margin: 0;
   padding: 0;
-  font-size: 10px;
+  font-size: 8px;
 }
 .social {
   margin: 7px 7px 7px 0px;
@@ -78,6 +78,11 @@
 
 .aboutContainer {
   margin-top: -25px;
+}
+
+
+.team-content {
+margin-left: 90px;
 }
 
 @media only screen and (max-width: 480px) {
