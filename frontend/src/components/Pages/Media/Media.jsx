@@ -5,6 +5,11 @@ import Banner from '../../common/Banner';
 import Breadcrumb from '../../common/BreadCrumb';
 
 class Media extends React.Component {
+
+  componentDidMount(){
+    window.scrollTo(0,0);
+  }
+
   render() {
     return (
       <>
