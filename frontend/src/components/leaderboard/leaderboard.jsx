@@ -22,6 +22,7 @@ class Leaderboard extends React.Component {
           <div className="row">
             {LeaderBoardData.map(p => (
               <LeaderGrid
+                key={p.id}
                 image={p.image}
                 quotes={p.quotes}
                 position={p.position}

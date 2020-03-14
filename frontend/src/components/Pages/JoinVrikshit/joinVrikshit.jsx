@@ -10,7 +10,7 @@ class JoinVrikshit extends React.Component {
       <div className="container description_Form">
         <div className="row">
           <div className="col-md-12">
-            <h1 class="volunteer_headline">VOLUNTEER WITH US</h1>
+            <h1 className="volunteer_headline">VOLUNTEER WITH US</h1>
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLScPBGeteil_ggg3pHZaOou7KNEMxf04WgbPKoV43WksmJFzaQ/viewform?embedded=true"
               width="1200"
