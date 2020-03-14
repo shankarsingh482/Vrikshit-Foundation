@@ -2,6 +2,11 @@ import React from 'react';
 import './Media.css';
 import { MediaContentData } from './MediaContent';
 class Media extends React.Component {
+
+  componentDidMount(){
+    window.scrollTo(0,0);
+  }
+
   render() {
     return (
       <>

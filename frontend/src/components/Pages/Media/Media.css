@@ -39,3 +39,24 @@ a.nostyle:link {
    width: 350px !important;
    height:190px !important
 }
+
+@media all and (min-width:0px) and (max-width: 480px) {
+  /* put your css styles in here */
+  .newsbox {
+    height: 400px;
+    width: 400px;
+    margin: 2px 22px;
+    border: 2px solid wheat;
+}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+  .newsbox {
+    height: 521px;
+    width: 700px;
+    margin: 2px 22px;
+    border: 2px solid wheat;
+  }
+
+}
