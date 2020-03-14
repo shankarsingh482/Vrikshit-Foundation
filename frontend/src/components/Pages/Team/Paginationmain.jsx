@@ -26,7 +26,6 @@ class PaginationMain extends React.Component {
     window.scrollTo(0, 0);
   }
   render() {
-      console.log('exampleItems',this.state.exampleItems, this.state.pageOfItems)
       return (
           <div>
           <section id="team" class="pb-5">
