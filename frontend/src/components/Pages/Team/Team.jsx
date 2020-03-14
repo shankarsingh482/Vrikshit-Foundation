@@ -10,15 +10,17 @@ class Team extends React.PureComponent {
   }
   render() {
     return (
-      <div className="teamContainer">
-        <Banner
-          bannerImage="teamCover"
-          pageDescription="Team Members"
-          quotes="Together we are Stronger"
-        />
-        <Breadcrumb second="Team" />
+      <>
+        <div className="teamContainer">
+          <Banner
+            bannerImage="teamCover"
+            pageDescription="Team Members"
+            quotes="Together we are Stronger"
+          />
+          <Breadcrumb second="Team" />
+        </div>
         <Paginationmain />
-      </div>
+      </>
     );
   }
 }
