@@ -58,5 +58,7 @@ a.nostyle:link {
     margin: 2px 22px;
     border: 2px solid wheat;
   }
-
+}
+.mediaBanner {
+  background-image: url('../../../assests/pageBanners/image4.jpeg');
 }

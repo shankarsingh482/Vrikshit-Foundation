@@ -12,9 +12,9 @@ class Gallery extends React.PureComponent {
   }
   render() {
     return (
-      <div className="galleryContainer">
+      <div className="headerContainer">
         <Banner
-          bannerStyle="galleryBanner"
+          bannerImage="galleryBanner"
           pageDescription="Gallery"
           quotes="We wish to bring many good things to life."
         />

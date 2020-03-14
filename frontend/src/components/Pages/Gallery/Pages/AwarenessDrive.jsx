@@ -8,7 +8,7 @@ const AwarenessDrive = () => {
   return (
     <div className="driveContainer">
       <Banner
-        bannerStyle="awarenessDriveCover"
+        bannerImage="awarenessDriveCover"
         pageDescription="Awareness Drive"
         quotes="We wish to bring many good things to life."
       />

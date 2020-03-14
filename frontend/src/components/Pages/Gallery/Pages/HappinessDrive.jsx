@@ -8,7 +8,7 @@ const HappinessDrive = () => {
   return (
     <div className="driveContainer">
       <Banner
-        bannerStyle="happinessDriveCover"
+        bannerImage="happinessDriveCover"
         pageDescription="Happiness Drive"
         quotes="We wish to bring many good things to life."
       />

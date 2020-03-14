@@ -8,7 +8,7 @@ const CleanDrive = () => {
   return (
     <div className="driveContainer">
       <Banner
-        bannerStyle="cleanDriveCover"
+        bannerImage="cleanDriveCover"
         pageDescription="Clean Drive"
         quotes="We wish to bring many good things to life."
       />

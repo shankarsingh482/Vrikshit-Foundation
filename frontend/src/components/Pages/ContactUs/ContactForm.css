@@ -56,3 +56,7 @@
   color: #ff5722;
   font-size: 40px;
 }
+
+.contactBanner {
+  background-image: url('../../../assests/pageBanners/image4.jpeg');
+}
