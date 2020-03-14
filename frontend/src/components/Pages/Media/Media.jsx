@@ -27,7 +27,7 @@ class Media extends React.Component {
         <div className="container">
           <div className="row">
             {MediaContentData.map(data => (
-              <div className="col-md-4 newsbox">
+              <div className="col-md-4 newsbox"       key = {data.id}>
                 <div className="row">
                   <div className="col-xs-12">
                     <img src={data.profileimg} />

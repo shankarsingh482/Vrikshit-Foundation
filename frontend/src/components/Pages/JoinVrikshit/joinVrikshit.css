@@ -1,0 +1,11 @@
+.description_Form {
+  background-color:whitesmoke;
+  width: 100%;
+  height: auto;
+}
+
+.volunteer_headline{
+  text-align: center;
+  margin-right: 100px;
+  font-weight: bold
+}
