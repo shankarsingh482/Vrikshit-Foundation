@@ -13,6 +13,7 @@ import GreenDrive from './components/Pages/Gallery/Pages/GreenDrive';
 import AwarenessDrive from './components/Pages/Gallery/Pages/AwarenessDrive';
 import HappinessDrive from './components/Pages/Gallery/Pages/HappinessDrive';
 import Faq from './components/Pages/Faq/Faq'
+import Media from './components/Pages/Media/Media'
 
 export const AppRoutes = [
   { id: 1, path: '/', exact: true, component: Home },
@@ -27,5 +28,6 @@ export const AppRoutes = [
   { id: 11, path: '/gallery/awarenessDrive', exact: true, component: AwarenessDrive },
   { id: 12, path: '/gallery/happinessDrive', exact: true, component: HappinessDrive },
   {id:13,path:'/faq',exact:true,component:Faq},
+  {id:14,path:'/Media',exact:true,component:Media},
   { id: 8, exact: false, component: Missing },
 ];

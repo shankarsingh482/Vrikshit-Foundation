@@ -11,7 +11,8 @@ export const NavBarData = [
   // { id: 4, navBar: 'Donation', path: '/donation' },
   { id: 5, navBar: 'Team', path: '/teamInformation' },
   // { id: 6, navBar: 'Achievement', path: '/achievement' },
-  { id: 7, navBar: 'Contact Us', path: '/contactus' }
+  { id: 7, navBar: 'Contact Us', path: '/contactus' },
+  { id: 8, navBar: 'Media', path: '/Media' }
 ];
 
 export const TopHeaderLink = [
