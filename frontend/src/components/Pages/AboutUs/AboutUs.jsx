@@ -4,6 +4,8 @@ import './AboutUs.css';
 import Team from '../../common/Team';
 import Banner from '../../common/Banner';
 import { AboutUsData } from './AboutUSData';
+import Breadcrumb from '../../common/BreadCrumb';
+
 class AboutUs extends React.PureComponent {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -12,25 +14,11 @@ class AboutUs extends React.PureComponent {
     return (
       <div className="aboutContainer">
         <Banner
-          bannerStyle="aboutBanner"
+          bannerImage="aboutBanner"
           pageDescription="About Us"
           quotes="what describe us"
         />
-        <div className="bread-bar">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-8 col-sm-6 col-xs-8">
-                <ol className="breadcrumb">
-                  <li>
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li className="active">About Us</li>
-                </ol>
-              </div>
-              <div className="col-md-4 col-sm-6 col-xs-4"></div>
-            </div>
-          </div>
-        </div>
+        <Breadcrumb second="About Us" />
         <div className="aboutus-secktion paddingTB60">
           <div className="container">
             <div className="row">
