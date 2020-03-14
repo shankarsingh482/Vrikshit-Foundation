@@ -14,6 +14,7 @@ import HorizontalLine from '../../common/horizontalline';
 import Blocks from '../../common/Blocks';
 import ContactUsContent from './ContactUsContent';
 import Banner from '../../common/Banner';
+import Breadcrumb from '../../common/BreadCrumb';
 
 class ContactUs extends React.PureComponent {
   constructor(props) {
@@ -65,10 +66,11 @@ class ContactUs extends React.PureComponent {
       <React.Fragment>
       <div className="aboutContainer">
         <Banner
-          bannerStyle="aboutBanner"
+          bannerImage="contactBanner"
           pageDescription="About Us"
           quotes="what describe us"
         />
+        <Breadcrumb second="Contact Us" />
         </div>
         <div className ="container">
         <h1 className="text-center">CONTACT US</h1>

@@ -14,12 +14,12 @@
   background-image: url('../../../assests/gallery/image4.jpeg');
 }
 
-.galleryContainer {
+.headerContainer {
   margin-top: -25px;
 }
 
 .galleryBanner {
-  background-image: url('../../../assests/gallery/banner.jpeg');
+  background-image: url('../../../assests/pageBanners/banner.jpeg');
 }
 
 @media only screen and (max-width: 480px) {

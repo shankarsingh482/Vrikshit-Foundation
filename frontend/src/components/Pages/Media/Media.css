@@ -39,3 +39,7 @@ a.nostyle:link {
    width: 350px !important;
    height:190px !important
 }
+
+.mediaBanner {
+  background-image: url('../../../assests/pageBanners/image4.jpeg');
+}
