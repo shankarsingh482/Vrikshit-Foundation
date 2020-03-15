@@ -17,7 +17,7 @@ class JoinVrikshit extends React.Component {
               marginHeight="0"
               marginWidth="0"
               width="100%"
-              height="100%"
+              height="1000px"
               title="Join Vrikshit Team"
             >
               Form is Loading
