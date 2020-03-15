@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Vrikshit-Foundation/precache-manifest.205b4b49740ea124775ede3338bbafba.js"
+  "/Vrikshit-Foundation/precache-manifest.8f5b80a2b66da12c06c06cc66ed27d6b.js"
 );
 
 self.addEventListener('message', (event) => {
