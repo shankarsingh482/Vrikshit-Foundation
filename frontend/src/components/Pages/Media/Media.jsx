@@ -24,31 +24,30 @@ class Media extends React.Component {
         <h2 align="center" className="heading_news">
           Vrikshit In the News
         </h2>
-        <div className="container">
-          <div className="row">
-            {MediaContentData.map(data => (
-              <div className="col-md-4 newsbox" key={data.id}>
-                <div className="row">
-                  <div className="col-xs-12">
-                    <img src={data.profileimg} alt ={data.description} />
-                    <p className="news_description">
-                      <Link to={data.url} target="_blank" rel="noopener noreferrer">
-                        {data.description}
-                      </Link>
-                      <p className="date_heading">{data.date}</p>
-                    </p>
-                  </div>
-                  <div className="col-xs-12 news_description">
-                    <img
-                      className="image_news"
-                      src={data.newspaper_description}
-                      alt ={data.description}
-                    />
-                  </div>
+        <div className="newsCollection">
+          {MediaContentData.map(data => (
+            <div className="newsbox" key={data.id}>
+              <div className="newsBoxTop">
+                <div className="newsBoxTopImage">
+                  <img src={data.profileimg} alt={data.description} />
+                </div>
+                <div className="newsBoxTopContent">
+                  <p className="news_description">
+                    <Link to={data.url} target="_blank" rel="noopener noreferrer">
+                      {data.description}
+                    </Link>
+                  </p>
+                  <p className="date_heading">{data.date}</p>
                 </div>
               </div>
-            ))}
-          </div>
+              <div className="newsBoxBottom">
+                <img
+                  src={data.newspaper_description}
+                  alt={data.description}
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </>
     );
