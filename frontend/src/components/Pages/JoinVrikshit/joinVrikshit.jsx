@@ -13,11 +13,11 @@ class JoinVrikshit extends React.Component {
             <h1 className="volunteer_headline">VOLUNTEER WITH US</h1>
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLScPBGeteil_ggg3pHZaOou7KNEMxf04WgbPKoV43WksmJFzaQ/viewform?embedded=true"
-              width="1200"
-              height="675"
               frameBorder="0"
               marginHeight="0"
               marginWidth="0"
+              width="100%"
+              height="100%"
               title="Join Vrikshit Team"
             >
               Form is Loading
