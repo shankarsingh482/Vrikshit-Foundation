@@ -43,7 +43,7 @@ class PaginationMain extends React.Component {
                               <img
                                 className=" img-fluid img-fluid-pd"
                                 src={data.image}
-                                alt="card image"
+                                alt={data.volunteer_description}
                               />
                             </p>
                             <h4 className="card-title">
@@ -69,7 +69,8 @@ class PaginationMain extends React.Component {
                                 <a
                                   className="social-icon text-xs-center"
                                   target="_blank"
-                                  href="#"
+                                  href="/#"
+                                  rel="noopener noreferrer"
                                 >
                                   <i className="fa fa-facebook"></i>
                                 </a>
@@ -78,7 +79,8 @@ class PaginationMain extends React.Component {
                                 <a
                                   className="social-icon text-xs-center"
                                   target="_blank"
-                                  href="#"
+                                  href="/#"
+                                  rel="noopener noreferrer"
                                 >
                                   <i className="fa fa-twitter"></i>
                                 </a>
@@ -87,7 +89,8 @@ class PaginationMain extends React.Component {
                                 <a
                                   className="social-icon text-xs-center"
                                   target="_blank"
-                                  href="#"
+                                  href="/#"
+                                  rel="noopener noreferrer"
                                 >
                                   <i className="fa fa-skype"></i>
                                 </a>
@@ -96,7 +99,8 @@ class PaginationMain extends React.Component {
                                 <a
                                   className="social-icon text-xs-center"
                                   target="_blank"
-                                  href="#"
+                                  href="/#"
+                                  rel="noopener noreferrer"
                                 >
                                   <i className="fa fa-google"></i>
                                 </a>

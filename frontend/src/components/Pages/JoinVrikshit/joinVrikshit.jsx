@@ -18,6 +18,7 @@ class JoinVrikshit extends React.Component {
               frameborder="0"
               marginheight="0"
               marginwidth="0"
+              title="Join Vrikshit Team"
             >
               Loading…
             </iframe>
