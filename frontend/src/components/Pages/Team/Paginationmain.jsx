@@ -1,5 +1,6 @@
 import React from 'react';
 import Pagination from './Pagination';
+import classnames from 'classnames';
 import { teamContentData } from './teamContent';
 
 class PaginationMain extends React.Component {
@@ -41,8 +42,11 @@ class PaginationMain extends React.Component {
                           <div className="card-body text-center">
                             <p>
                               <img
-                                className=" img-fluid img-fluid-pd"
-                                src={data.image}
+                               className =  {classnames(
+                                  'img-fluid img-fluid-pd',
+                                  'lazyload'
+                                )}
+                                data-src={data.image}
                                 alt={data.volunteer_description}
                               />
                             </p>

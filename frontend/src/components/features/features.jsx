@@ -18,7 +18,7 @@ class Feature extends React.Component{
 								<div className="feature-copy">
 									<h3>{p.headline}</h3>
 									<p>{p.details}</p>
-									<p><a href="/JoinVrikshit">Learn More</a></p>
+									<p><a href="/JoinVrikshit">{p.link}</a></p>
 								</div>
 					 	</div>
 					</div>
