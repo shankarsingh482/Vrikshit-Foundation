@@ -133,7 +133,7 @@ section .section-title {
 }
 
 .teamCover {
-  background-image: url('../../../assests/gallery/image2.jpeg');
+  background-image: url('../../../assests/pageBanners/image4.jpeg');
 }
 
 .teamContainer {
@@ -148,9 +148,19 @@ section .section-title {
   line-height: 0;
 }
 
+.pagination li{
+  display: inline-block;
+  margin: 0;
+}
+
 @media only screen and (max-width: 480px) {
   .teamContainer {
     margin-top: -35px;
+  }
+
+  .pagination-wrapper{
+    width: auto;
+    padding: 0 10px;
   }
 }
  body{

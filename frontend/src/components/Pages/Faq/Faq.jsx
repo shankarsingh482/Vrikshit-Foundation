@@ -8,6 +8,7 @@ function Faq() {
     <div>
       {FaqData.map(data => (
       <Accordion
+      key = {data.id}
         title={data.title}
         content={data.content}
       />

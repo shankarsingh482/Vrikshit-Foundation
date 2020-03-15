@@ -4,7 +4,7 @@ const Team = (props) => {
   const {profileimg,name,description} = props;
   return(
   <React.Fragment>
-    <img src={profileimg} />
+    <img src={profileimg} alt={name} />
     <div className="team-content">
       <h3>{name}</h3>
        <div className="border-team"></div>

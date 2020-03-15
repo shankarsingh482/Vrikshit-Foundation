@@ -32,6 +32,10 @@
   padding: 80px;
 }
 
+.defaultImage {
+  background-image: url('../../assests/pageBanners/default.jpg');
+}
+
 .bannerHeading1 {
   font-size: 4rem;
   width: 50%;
@@ -40,7 +44,6 @@
 
 .bannerHeading2 {
   font-size: 5rem;
-  width: 50%;
   color: #fff;
 }
 
