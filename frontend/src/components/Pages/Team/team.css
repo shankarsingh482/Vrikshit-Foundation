@@ -141,7 +141,11 @@ section .section-title {
 }
 .pagination-wrapper{
   margin:0  auto;
-  width: 500px;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  font: 0.9em;
+  line-height: 0;
 }
 
 @media only screen and (max-width: 480px) {
@@ -149,3 +153,7 @@ section .section-title {
     margin-top: -35px;
   }
 }
+ body{
+   right: 0;
+   left:0;
+ }

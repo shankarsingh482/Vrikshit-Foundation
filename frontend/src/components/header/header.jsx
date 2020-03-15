@@ -8,7 +8,8 @@ import { NavBarData, TopHeaderLink, SocialMedia } from './headerData';
 class Header extends React.PureComponent {
   render() {
     return (
-      <nav className="navbar navbar-default navbar-fixed-top">
+      <nav className="navbar navbar-default" //navbar-fixed-top"
+      >
         <NavBar SocialMedia={SocialMedia} TopHeaderLink={TopHeaderLink} />
         <div className="container nav_design">
           <div className="row">
