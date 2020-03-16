@@ -1,14 +1,3 @@
-.newsbox
-{ max-width: 500px;
-  min-width: 300px;
-  width: 95%;
-  height:400px;
-  margin: 5px 9px;
-  border: 2px solid wheat;
-  display:flex;
-  flex-direction: column;
-  text-align: center;
-}
 
 .newsbox img {
   width: 40%;
@@ -34,7 +23,6 @@ a.nostyle:link {
 }
 
 .newsCollection{
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -66,7 +54,7 @@ a.nostyle:link {
   vertical-align: middle;
   justify-content: center;
   flex-flow: column nowrap;
-  padding: 4%;
+  margin-top: 5%;
 }
 
 .newsBoxBottom{
@@ -85,7 +73,7 @@ a.nostyle:link {
 .newsBoxTopContent .date_heading { 
   font-weight: 600;
   line-height: 1.3;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .newsBoxTop .news_description a{
@@ -93,3 +81,57 @@ a.nostyle:link {
   font-size: 1.5em;
   line-height: 1;
 }
+
+@media screen and (min-width:0px) and (max-width: 359px){
+  .newsbox
+{ width: 310px;
+  height:400px;
+  margin: 4px 10px;
+  border: 2px solid wheat;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+}
+
+@media screen and (min-width:360px) and (max-width: 419px){
+  .newsbox
+{ width: 360px;
+  height:400px;
+  margin: 2px 4px;
+  border: 2px solid wheat;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+}
+
+@media screen and (min-width:420px) and (max-width: 719px){
+  .newsbox
+{ width: 420px;
+  height:400px;
+  margin: 2px 4px;
+  border: 2px solid wheat;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+}
+
+@media screen and (min-width:720px){
+  .newsbox
+{ width: 420px;
+  height:380px;
+  margin: 2px 4px;
+  border: 2px solid wheat;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+}
+
+
