@@ -1431,7 +1431,7 @@ img {
   vertical-align: middle;
 }
 
-.img-responsive {
+.img-responsive { 
   display: block;
   max-width: 100%;
   height: auto;
@@ -5698,7 +5698,7 @@ a.thumbnail.active {
 .media,
 .media-body {
   zoom: 1;
-  overflow: hidden;
+   overflow: hidden;
 }
 
 .media-body {

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="text-center footer">
       {SocialMedia.map(p => (
-        <a href={p.link} key={p.id} target="_blank" className='footerSocialIcon'>
+        <a href={p.link} key={p.id} target="_blank" className='footerSocialIcon' rel="noopener noreferrer" >
           <FontAwesomeIcon size='2x' icon={p.IclassName} />
         </a>
       ))}

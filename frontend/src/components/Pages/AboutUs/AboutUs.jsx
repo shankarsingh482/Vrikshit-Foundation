@@ -69,7 +69,7 @@ class AboutUs extends React.PureComponent {
           </div>
           <div className="row">
             {AboutUsData.map(data => (
-              <div className="col-md-4 team-box">
+              <div className="col-md-4 team-box" key={data.id}>
                 <div className="team-img thumbnail">
                   <Team
                     name={data.name}
@@ -80,8 +80,8 @@ class AboutUs extends React.PureComponent {
               </div>
             ))}
           </div>
-          <div class="row">
-            <div class="col text-center">
+          <div className="row">
+            <div className="col text-center">
               <Link to="/teamInformation" className="btn btn-primary btn-lg">
                 See More
               </Link>
