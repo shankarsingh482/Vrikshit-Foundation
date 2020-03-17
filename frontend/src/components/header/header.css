@@ -50,3 +50,7 @@
     margin-top: -5%;
   }
 }
+/* to fix to overlapping of vrikshit logo and navbar menu top border when expanded*/
+.navbar-header{
+  margin-bottom: 10px;
+}
