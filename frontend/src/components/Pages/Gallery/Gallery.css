@@ -164,19 +164,23 @@ img.hover-shadow {
 
 .commonImage {
   max-height: 300px;
+  max-width: 100%;
 }
 
 .singleImg {
-  float: left;
   max-height: 300px;
   max-width: 100%;
   padding: 5px;
+
 }
 
 .imageContainer {
-  display: table;
-  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
+scrol
 
 .imageContainer img:hover {
   opacity: 0.7;
