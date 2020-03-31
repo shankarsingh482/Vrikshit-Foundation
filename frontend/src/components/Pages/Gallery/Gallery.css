@@ -165,12 +165,12 @@ img.hover-shadow {
 .commonImage {
   max-height: 300px;
   max-width: 100%;
+  padding: 5px;
 }
 
 .singleImg {
   max-height: 300px;
   max-width: 100%;
-  margin: 5px;
 
 }
 
@@ -232,7 +232,10 @@ scrol
 
 .drop-mobile li {
   margin-left: 0;
-  padding-left: 20px;
 }
-
-
+/* changes needed in bootstrap css*/
+.fix-bootstrap{
+  float: unset;
+  text-align: center;
+  width: 100%;
+}

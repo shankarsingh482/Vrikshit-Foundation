@@ -50,7 +50,7 @@ class Gallery extends React.PureComponent {
 
         <div className="container">
           <div
-            className={classnames(this.isMobile ? 'dropdown text-center' : '')}
+            className={classnames(this.isMobile ? 'dropdown text-center dropdown-fix' : '')}
           >
             {this.isMobile && (
               <button
@@ -64,7 +64,7 @@ class Gallery extends React.PureComponent {
             )}
             <ul
               className={classnames(
-                this.isMobile ? 'dropdown-menu drop-mobile' : 'galleryFilter'
+                this.isMobile ? 'dropdown-menu drop-mobile fix-bootstrap' : 'galleryFilter'
               )}
               id="gallery"
             >
