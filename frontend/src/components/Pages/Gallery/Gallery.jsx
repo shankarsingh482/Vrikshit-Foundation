@@ -1,59 +1,169 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import classnames from 'classnames';
 import './Gallery.css';
-import { GalleryData } from './GalleryData';
 import HorizontalLine from '../../common/horizontalline';
 import Banner from '../../common/Banner';
 import Breadcrumb from '../../common/BreadCrumb';
+import { allImages, GalleryTabs } from './GalleryData';
 
 class Gallery extends React.PureComponent {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
+  isMobile = window.innerWidth <= 768;
+  currentSlide = 0;
+  state = { isModalOpen: false, filterTab: 'All' };
+  openModal = e => {
+    this.currentSlide = parseInt(e.target.id, 10);
+    this.setState({ isModalOpen: true });
+  };
+  closeModal = () => {
+    this.setState({ isModalOpen: false });
+  };
+
+  showNextImage = () => {
+    this.currentSlide = this.currentSlide + 1;
+  };
+  showPrevImage = () => {
+    this.currentSlide = this.currentSlide - 1;
+  };
+  filterTab = e => {
+    this.setState({ filterTab: e.target.id });
+  };
   render() {
     return (
-      <div className="headerContainer">
-        <Banner
-          bannerImage="galleryBanner"
-          pageDescription="Gallery"
-          quotes="We wish to bring many good things to life."
-        />
-        <Breadcrumb second="Gallery" />
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 col-md-offset-3 text-center heading-section animate-box">
-              <h1 className="h3_gallery_heading">Our Gallery</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-                est facilis maiores, perspiciatis accusamus asperiores sint
-                consequuntur debitis.
-              </p>
-              <HorizontalLine className="hr_style" />
-            </div>
-          </div>
+      <>
+        <div
+          className="driveContainer"
+          aria-label="gallery header"
+          tabIndex="0"
+        >
+          <Banner
+            bannerImage="galleryBanner"
+            pageDescription="Gallery"
+            quotes="We wish to bring many good things to life."
+          />
+          <Breadcrumb
+            second="Gallery"
+            secondRoute="gallery"
+          />
+        </div>
+        <h1 className="h3_gallery_heading text-center">Our Gallery</h1>
+        <HorizontalLine className="hr_style" />
 
-          <div className="row row-bottom-padded-md">
-            <div className="col-md-12">
-              <ul id="fh5co-portfolio-list">
-                {GalleryData.map(p => (
-                  <li
-                    className={p.className}
-                    key={p.id}
-                    data-animate-effect="fadeIn"
+        <div className="container">
+          <div
+            className={classnames(this.isMobile ? 'dropdown text-center' : '')}
+          >
+            {this.isMobile && (
+              <button
+                className="btn dropdown-toggle drop-label"
+                type="button"
+                data-toggle="dropdown"
+              >
+                {this.state.filterTab}
+                <span className="caret"></span>
+              </button>
+            )}
+            <ul
+              className={classnames(
+                this.isMobile ? 'dropdown-menu drop-mobile' : 'galleryFilter'
+              )}
+              id="gallery"
+            >
+              {GalleryTabs.map(item => (
+                <li
+                  id={item.id}
+                  key={item.id}
+                  onClick={this.filterTab}
+                  className={classnames(
+                    this.state.filterTab === item.Name ? 'tabActive' : ''
+                  )}
+                >
+                  {item.Name}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div
+            className="imageContainer"
+            aria-label="Gallery All Images"
+            id="imageContainer"
+            tabIndex="0"
+          >
+            {allImages.map(item => {
+              if (this.state.filterTab === 'All')
+                return (
+                  <div
+                    className="singleImg"
+                    key={item.id}
+                    onClick={this.openModal}
                   >
-                    <Link to={p.path} className="color-3">
-                      <div className="case-studies-summary">
-                        <span>{p.subHeading}</span>
-                        <h2>{p.mainHeading}</h2>
-                      </div>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+                    <img
+                      className="commonImage"
+                      id={item.id}
+                      src={item.image}
+                      alt={item.alt}
+                    />
+                  </div>
+                );
+              if (item.category === this.state.filterTab)
+                return (
+                  <div
+                    className="singleImg"
+                    key={item.id}
+                    onClick={this.openModal}
+                  >
+                    <img
+                      className="commonImage"
+                      id={item.id}
+                      src={item.image}
+                      alt={item.alt}
+                    />
+                  </div>
+                );
+            })}
           </div>
         </div>
-      </div>
+        {this.state.isModalOpen && (
+          <div className="modal">
+            <span className="close cursor" onClick={this.closeModal}>
+              &times;
+            </span>
+            {allImages.map(item => (
+              <div
+                className={classnames(
+                  'modal-content',
+                  this.currentSlide === item.id
+                    ? 'modalCurrentSlide'
+                    : 'hideSlide'
+                )}
+                id={item.id}
+                key={item.id}
+              >
+                <img className="modalImage" src={item.image} alt={item.image} />
+              </div>
+            ))}
+            <a
+              className={classnames(
+                'prev',
+                this.currentSlide === 1 ? 'hideSlide' : ''
+              )}
+              href="#!"
+              onClick={this.showPrevImage}
+            >
+              &#10094;
+            </a>
+            <a
+              className={classnames(
+                'next',
+                this.currentSlide === allImages.length ? 'hideSlide' : ''
+              )}
+              href="#!"
+              onClick={this.showNextImage}
+            >
+              &#10095;
+            </a>
+          </div>
+        )}
+      </>
     );
   }
 }
