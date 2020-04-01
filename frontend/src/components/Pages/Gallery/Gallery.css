@@ -160,6 +160,9 @@ img.hover-shadow {
   .driveContainer {
     margin-top: -35px;
   }
+  .fix-bootstrap{
+    width: 100%;
+  }
 }
 
 .commonImage {
@@ -224,18 +227,24 @@ scrol
 
 .drop-label {
   width: 150px;
+  margin:10px;
 }
 
 .drop-label .caret {
   margin-left: 5px;
 }
 
-.drop-mobile li {
+.drop-mobile li{
   margin-left: 0;
 }
 /* changes needed in bootstrap css*/
-.fix-bootstrap{
-  float: unset;
+.dropdown-fix ul{
+  float:none;
   text-align: center;
-  width: 100%;
+  left: auto;
+}
+
+.dropdown-fix{
+  display: flex;
+  justify-content: center;
 }
